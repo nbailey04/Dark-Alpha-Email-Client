@@ -11,3 +11,5 @@ if (!process.env.POSTGRES_URL) {
 
 export const client = postgres(process.env.POSTGRES_URL);
 export const db = drizzle(client, { schema });
+
+export { schema };
