@@ -41,7 +41,8 @@ We've been following {company}'s work and are impressed by your innovative appro
 Would you be available for a brief call next week to discuss potential partnership opportunities? I'd love to learn more about {company}'s current initiatives and share how we might be able to support your goals.
 
 Looking forward to connecting with you, {firstName}.`,
-    signature: `Your Name
+    signature: `Best Regards, 
+Your Name
 Your Title
 Your Company`,
   })
@@ -95,7 +96,7 @@ Your Company`,
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight">Email Template Generator</h1>
-          <p className="mt-2 text-muted-foreground">Create personalized email templates with dynamic content</p>
+          <p className="mt-2 text-muted-foreground">Create personalized email templates with dynamic content!</p>
         </div>
 
         <div className="flex gap-4 mb-4">
