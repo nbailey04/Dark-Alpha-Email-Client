@@ -11,6 +11,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/f/[name]/page.js"
     ],
+    "/f/[name]/[id]/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/f/[name]/[id]/loading.js"
+    ],
+    "/f/[name]/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/f/[name]/[id]/page.js"
+    ],
     "/f/[name]/new/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -20,6 +30,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/users/route.js"
+    ],
+    "/f/[name]/template/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/f/[name]/template/page.js"
     ]
   }
 }

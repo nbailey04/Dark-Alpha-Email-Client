@@ -1,131 +1,360 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import { toast } from "sonner"
-import { Copy, Send } from "lucide-react"
-import { EmailTemplate } from "@/app/components/email-template"
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { toast } from "sonner";
+import { Copy, Send } from "lucide-react";
+import { EmailTemplate } from "@/app/components/email-template";
 
-interface Recipient {
-  id: number
-  firstName: string
-  lastName: string
-  company: string
-  jobTitle?: string
-  email: string
-}
+type Recipient = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  company: string;
+  jobTitle?: string;
+  email: string;
+};
 
-export default function EmailTemplatePage() {
-  const [useDB, setUseDB] = useState(true) // toggle between DB/manual
-  const [recipients, setRecipients] = useState<Recipient[]>([])
-  const [selectedRecipientIndex, setSelectedRecipientIndex] = useState(0)
+type ManualRecipient = {
+  firstName: string;
+  lastName: string;
+  company: string;
+  jobTitle?: string;
+  email?: string;
+};
 
-  const [manualData, setManualData] = useState({
+type EmailContent = {
+  subject: string;
+  body: string;
+  signature: string;
+};
+
+const TEMPLATE_LIBRARY: Record<
+  string,
+  { subject: string; body: string; signature?: string }
+> = {
+  welcome: {
+    subject: "Welcome to {company}, {firstName}!",
+    body: `Hi {firstName},
+
+Welcome to {company}! We're thrilled to have you on board. As the {jobTitle}, you're an important part of our community.
+
+If you have any questions, reply to this email and I'll help you get started.
+`,
+    signature: `Best,\nYour Name\nYour company`,
+  },
+  newsletter: {
+    subject: "{company} — Monthly Highlights",
+    body: `Hello {firstName},
+
+Here's the latest from {company}: new features, success stories, and upcoming events.
+
+Thanks for being part of our journey.`,
+    signature: `Warmly,\nYour Name\nYour company`,
+  },
+  promotional: {
+    subject: "Limited Time Offer from {company}",
+    body: `Hey {firstName},
+
+We're excited to offer a special promotion exclusively for our community. Use code SAVE20 for 20% off.
+`,
+    signature: `Cheers,\nYour Name\nYour company`,
+  },
+  business: {
+    subject: "Quarterly Business Update — {company}",
+    body: `Dear {firstName},
+
+I hope you're well. I wanted to share a brief update on what we've been working on at {company} and some opportunities to collaborate.
+`,
+    signature: `Sincerely,\nYour Name\nYour company`,
+  },
+  followup: {
+    subject: "Following up on our conversation, {firstName}",
+    body: `Hi {firstName},
+
+Just following up to see if you had time to review my previous message. Would love to hop on a quick call.
+`,
+    signature: `Best,\nYour Name`,
+  },
+};
+
+export default function NewEmailPage() {
+  const searchParams = useSearchParams();
+  const queryType = searchParams?.get("type") || "single"; // 'single' or 'bulk'
+  const isBulk = queryType === "bulk";
+  const templateId = searchParams?.get("template") || null;
+
+  // UI mode: use DB or manual inputs (toggle on page)
+  const [useDB, setUseDB] = useState<boolean>(true);
+
+  // DB recipients and selection state
+  const [recipients, setRecipients] = useState<Recipient[]>([]);
+  const [selectedRecipientIndex, setSelectedRecipientIndex] = useState<number>(0); // for single DB
+  const [selectedRecipients, setSelectedRecipients] = useState<number[]>([]); // for bulk DB (IDs)
+
+  // Manual single / bulk
+  const [manualData, setManualData] = useState<ManualRecipient>({
     firstName: "",
     lastName: "",
     company: "",
     jobTitle: "",
     email: "",
-  })
+  });
+  const [manualBulkData, setManualBulkData] = useState<ManualRecipient[]>(
+    []
+  );
 
-  const [emailContent, setEmailContent] = useState({
+  // Email content (subject/body/signature) — template will overwrite if ?template=...
+  const [emailContent, setEmailContent] = useState<EmailContent>({
     subject: "Partnership Opportunity",
-    body: `I hope this email finds you well. I'm reaching out to you as the {jobTitle} at {company}.
+    body: `I hope this email finds you well. I'm reaching out to you as the {jobTitle} at {company}.\n\nWe've been following {company}'s work and are impressed by your innovative approach to the industry. I believe there could be valuable opportunities for collaboration between our organizations.\n\nWould you be available for a brief call next week to discuss potential partnership opportunities? I'd love to learn more about {company}'s current initiatives and share how we might be able to support your goals.\n\nLooking forward to connecting with you, {firstName}.`,
+    signature: `Best Regards,\nYour Name\nYour Title\nYour Company`,
+  });
 
-We've been following {company}'s work and are impressed by your innovative approach to the industry. I believe there could be valuable opportunities for collaboration between our organizations.
-
-Would you be available for a brief call next week to discuss potential partnership opportunities? I'd love to learn more about {company}'s current initiatives and share how we might be able to support your goals.
-
-Looking forward to connecting with you, {firstName}.`,
-    signature: `Best Regards, 
-Your Name
-Your Title
-Your Company`,
-  })
-
+  // Load recipients from /api/users (your existing API)
   useEffect(() => {
     async function fetchRecipients() {
       try {
-        const res = await fetch("/api/users")
-        const data = await res.json()
-        setRecipients(data)
+        const res = await fetch("/api/users");
+        const data = await res.json();
+        // Normalize incoming data shape just in case
+        const normalized: Recipient[] = (data || []).map((d: any, idx: number) => ({
+          id: d.id ?? idx,
+          firstName: d.firstName ?? d.first_name ?? d.first ?? "[First]",
+          lastName: d.lastName ?? d.last_name ?? d.last ?? "[Last]",
+          company: d.company ?? d.companyName ?? "",
+          jobTitle: d.jobTitle ?? d.position ?? "",
+          email: d.email ?? "",
+        }));
+        setRecipients(normalized);
+        setSelectedRecipients(normalized.map((r) => r.id));
+        setSelectedRecipientIndex(0);
       } catch (err) {
-        console.error(err)
-        toast.error("Error fetching recipients")
+        console.error(err);
+        toast.error("Error fetching recipients");
       }
     }
-    fetchRecipients()
-  }, [])
+    fetchRecipients();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
+  // If a template ID is passed via query param, apply it to emailContent
+  useEffect(() => {
+    if (templateId && TEMPLATE_LIBRARY[templateId]) {
+      const t = TEMPLATE_LIBRARY[templateId];
+      setEmailContent((prev) => ({
+        subject: t.subject ?? prev.subject,
+        body: t.body ?? prev.body,
+        signature: t.signature ?? prev.signature,
+      }));
+    }
+  }, [templateId]);
+
+  // Handlers for manual input and email content
   const handleManualChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setManualData({ ...manualData, [e.target.name]: e.target.value })
-  }
+    setManualData({ ...manualData, [e.target.name]: e.target.value });
+  };
+  const handleEmailChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setEmailContent({ ...emailContent, [e.target.name]: e.target.value });
+  };
 
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setEmailContent({ ...emailContent, [e.target.name]: e.target.value })
-  }
+  // Bulk selection handlers
+  const toggleRecipient = (id: number) =>
+    setSelectedRecipients((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
+    );
+  const selectAllRecipients = () =>
+    setSelectedRecipients(recipients.map((r) => r.id));
+  const deselectAllRecipients = () => setSelectedRecipients([]);
 
+  // Manual bulk handlers
+  const addManualRecipient = () =>
+    setManualBulkData((s) => [
+      ...s,
+      { firstName: "", lastName: "", company: "", jobTitle: "", email: "" },
+    ]);
+  const removeManualRecipient = (index: number) =>
+    setManualBulkData((s) => s.filter((_, i) => i !== index));
+  const updateManualRecipient = (
+    index: number,
+    field: keyof ManualRecipient,
+    value: string
+  ) => {
+    setManualBulkData((s) => {
+      const copy = [...s];
+      copy[index] = { ...copy[index], [field]: value };
+      return copy;
+    });
+  };
+
+  // Helpers to render preview — accepts either DB recipient or manual recipient
+  const getPreviewBody = (data?: Partial<ManualRecipient> | Partial<Recipient>) => {
+    const firstName = data?.firstName ?? "[First Name]";
+    const lastName = data?.lastName ?? "[Last Name]";
+    const company = (data as any)?.company ?? (data as any)?.companyName ?? "[Company]";
+    const jobTitle = (data as any)?.jobTitle ?? (data as any)?.position ?? "";
+
+    return emailContent.body
+      .replace(/\{firstName\}/g, firstName)
+      .replace(/\{lastName\}/g, lastName)
+      .replace(/\{company\}/g, company)
+      .replace(/\{companyName\}/g, company)
+      .replace(/\{jobTitle\}/g, jobTitle);
+  };
+
+  const getPreviewSubject = (data?: Partial<ManualRecipient> | Partial<Recipient>) => {
+    const firstName = data?.firstName ?? "[First Name]";
+    const company = (data as any)?.company ?? (data as any)?.companyName ?? "[Company]";
+    return emailContent.subject
+      .replace(/\{firstName\}/g, firstName)
+      .replace(/\{company\}/g, company)
+      .replace(/\{companyName\}/g, company);
+  };
+
+  // currentData for single mode (DB or manual)
+  const currentData: ManualRecipient | Recipient =
+    useDB && !isBulk
+      ? recipients[selectedRecipientIndex] ?? {
+          firstName: "[First Name]",
+          lastName: "[Last Name]",
+          company: "[Company]",
+          jobTitle: "[Job Title]",
+          email: "",
+        }
+      : manualData;
+
+  // clipboard + generate placeholders
   const copyToClipboard = async () => {
-    const emailText = document.getElementById("email-preview")?.innerText || ""
-    await navigator.clipboard.writeText(emailText)
-    toast.success("Email template copied to clipboard") // 
-  }
-
+    const emailText =
+      document.getElementById("email-preview")?.innerText || "";
+    await navigator.clipboard.writeText(emailText);
+    toast.success("Email template copied to clipboard");
+  };
   const generateEmail = () => {
-    toast.success("Your personalized email is ready")
-  }
-
-  // select current data based on toggle
-  const currentData = useDB
-    ? recipients[selectedRecipientIndex] || { firstName: "[First Name]", lastName: "[Last Name]", company: "[Company]", jobTitle: "[Job Title]", email: "" }
-    : manualData
-
-  // replace placeholders for preview
-  const previewBody = emailContent.body
-    .replace(/\{firstName\}/g, currentData.firstName)
-    .replace(/\{lastName\}/g, currentData.lastName)
-    .replace(/\{company\}/g, currentData.company)
-    .replace(/\{jobTitle\}/g, currentData.jobTitle || "")
+    toast.success("Your personalized email is ready");
+  };
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight">Email Template Generator</h1>
-          <p className="mt-2 text-muted-foreground">Create personalized email templates with dynamic content!</p>
+          <p className="mt-2 text-muted-foreground">
+            Create personalized email templates with dynamic content!
+          </p>
         </div>
 
+        {/* Toggle: Use DB vs Manual (we keep this inside page) */}
         <div className="flex gap-4 mb-4">
-          <Button variant={useDB ? "default" : "outline"} onClick={() => setUseDB(true)}>DB Recipients</Button>
-          <Button variant={!useDB ? "default" : "outline"} onClick={() => setUseDB(false)}>Manual Input</Button>
+          <Button variant={useDB ? "default" : "outline"} onClick={() => setUseDB(true)}>
+            DB Recipients
+          </Button>
+          <Button variant={!useDB ? "default" : "outline"} onClick={() => setUseDB(false)}>
+            Manual Input
+          </Button>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Input Panel */}
           <Card>
             <CardHeader>
-              <CardTitle>{useDB ? "Select Recipient" : "Manual Recipient Input"}</CardTitle>
+              <CardTitle>
+                {useDB
+                  ? isBulk
+                    ? "Select Recipients"
+                    : "Select Recipient"
+                  : isBulk
+                  ? "Manual Recipients"
+                  : "Manual Recipient Input"}
+              </CardTitle>
               <CardDescription>Customize the recipient details</CardDescription>
             </CardHeader>
+
             <CardContent className="space-y-4">
               {useDB ? (
-                <div className="space-y-2">
-                  <Label>Select Recipient</Label>
-                  <select
-                    value={selectedRecipientIndex}
-                    onChange={(e) => setSelectedRecipientIndex(Number(e.target.value))}
-                    className="w-full border rounded-md px-2 py-1"
-                  >
-                    {recipients.map((r, idx) => (
-                      <option key={r.id} value={idx}>
-                        {r.firstName} {r.lastName} ({r.company})
-                      </option>
+                isBulk ? (
+                  <div className="space-y-2 max-h-[300px] overflow-y-auto border p-2 rounded">
+                    <div className="flex justify-between mb-2">
+                      <Button size="sm" onClick={selectAllRecipients}>
+                        Select All
+                      </Button>
+                      <Button size="sm" onClick={deselectAllRecipients}>
+                        Deselect All
+                      </Button>
+                    </div>
+                    {recipients.map((r) => (
+                      <div key={r.id} className="flex items-center gap-2 py-1">
+                        <input
+                          aria-label={`select-${r.id}`}
+                          type="checkbox"
+                          checked={selectedRecipients.includes(r.id)}
+                          onChange={() => toggleRecipient(r.id)}
+                        />
+                        <span className="truncate">
+                          {r.firstName} {r.lastName} ({r.company})
+                        </span>
+                      </div>
                     ))}
-                  </select>
+                    {recipients.length === 0 && (
+                      <p className="text-sm text-muted-foreground">No recipients found.</p>
+                    )}
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    <Label>Select Recipient</Label>
+                    <select
+                      value={selectedRecipientIndex}
+                      onChange={(e) => setSelectedRecipientIndex(Number(e.target.value))}
+                      className="w-full border rounded-md px-2 py-1"
+                    >
+                      {recipients.map((r, idx) => (
+                        <option key={r.id} value={idx}>
+                          {r.firstName} {r.lastName} ({r.company})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )
+              ) : isBulk ? (
+                <div className="space-y-2">
+                  {manualBulkData.map((m, idx) => (
+                    <div key={idx} className="flex gap-2 items-center">
+                      <Input
+                        placeholder="First Name"
+                        value={m.firstName}
+                        onChange={(e) => updateManualRecipient(idx, "firstName", e.target.value)}
+                      />
+                      <Input
+                        placeholder="Last Name"
+                        value={m.lastName}
+                        onChange={(e) => updateManualRecipient(idx, "lastName", e.target.value)}
+                      />
+                      <Input
+                        placeholder="Company"
+                        value={m.company}
+                        onChange={(e) => updateManualRecipient(idx, "company", e.target.value)}
+                      />
+                      <Button size="sm" onClick={() => removeManualRecipient(idx)}>
+                        Remove
+                      </Button>
+                    </div>
+                  ))}
+                  <Button size="sm" onClick={addManualRecipient}>
+                    Add Recipient
+                  </Button>
                 </div>
               ) : (
                 <div className="space-y-2">
@@ -142,6 +371,7 @@ Your Company`,
                 </div>
               )}
 
+              {/* Email content inputs */}
               <div className="space-y-2 border-t pt-2">
                 <Label>Subject</Label>
                 <Input name="subject" value={emailContent.subject} onChange={handleEmailChange} />
@@ -163,23 +393,22 @@ Your Company`,
 
               <div className="flex gap-2 pt-2">
                 <Button onClick={generateEmail} className="flex-1">
-                  <Send className="mr-2 h-4 w-4" />
-                  Generate Email
+                  <Send className="mr-2 h-4 w-4" /> Generate Email
                 </Button>
                 <Button onClick={copyToClipboard} variant="outline">
-                  <Copy className="mr-2 h-4 w-4" />
-                  Copy
+                  <Copy className="mr-2 h-4 w-4" /> Copy
                 </Button>
               </div>
             </CardContent>
           </Card>
 
-          {/* Preview */}
+          {/* Preview Panel */}
           <Card>
             <CardHeader>
               <CardTitle>Email Preview</CardTitle>
               <CardDescription>See how your personalized email will look</CardDescription>
             </CardHeader>
+
             <CardContent>
               <Tabs defaultValue="preview" className="w-full">
                 <TabsList className="grid w-full grid-cols-2">
@@ -188,27 +417,107 @@ Your Company`,
                 </TabsList>
 
                 <TabsContent value="preview" className="mt-4">
-                  <div id="email-preview" className="rounded-lg border bg-card p-6">
-                    <EmailTemplate
-                      firstName={currentData.firstName}
-                      lastName={currentData.lastName}
-                      companyName={currentData.company}
-                      position={currentData.jobTitle}
-                      body={previewBody}
-                      signature={emailContent.signature}
-                    />
+                  <div
+                    id="email-preview"
+                    className="space-y-4 overflow-y-auto max-h-[600px] rounded-lg border bg-card p-6"
+                  >
+                    {useDB && isBulk && selectedRecipients.length > 0 ? (
+                      // DB Bulk
+                      recipients
+                        .filter((r) => selectedRecipients.includes(r.id))
+                        .map((r, idx, arr) => (
+                          <div
+                            key={r.id}
+                            className={`pb-4 ${idx !== arr.length - 1 ? "border-b border-muted-foreground/20" : ""}`}
+                          >
+                            <EmailTemplate
+                              firstName={r?.firstName}
+                              lastName={r?.lastName}
+                              companyName={r?.company}
+                              position={r?.jobTitle}
+                              subject={getPreviewSubject(r)}
+                              body={getPreviewBody(r)}
+                              signature={emailContent.signature}
+                            />
+                          </div>
+                        ))
+                    ) : !useDB && isBulk && manualBulkData.length > 0 ? (
+                      // Manual Bulk
+                      manualBulkData.map((m, idx, arr) => (
+                        <div
+                          key={idx}
+                          className={`pb-4 ${idx !== arr.length - 1 ? "border-b border-muted-foreground/20" : ""}`}
+                        >
+                          <EmailTemplate
+                            firstName={m.firstName}
+                            lastName={m.lastName}
+                            companyName={m.company}
+                            position={m.jobTitle}
+                            subject={getPreviewSubject(m)}
+                            body={getPreviewBody(m)}
+                            signature={emailContent.signature}
+                          />
+                        </div>
+                      ))
+                    ) : (
+                      // Single (DB or Manual)
+                      <EmailTemplate
+                        firstName={(currentData as any)?.firstName}
+                        lastName={(currentData as any)?.lastName}
+                        companyName={(currentData as any)?.company}
+                        position={(currentData as any)?.jobTitle}
+                        subject={getPreviewSubject(currentData)}
+                        body={getPreviewBody(currentData)}
+                        signature={emailContent.signature}
+                      />
+                    )}
                   </div>
                 </TabsContent>
 
                 <TabsContent value="html" className="mt-4">
-                  <pre className="overflow-x-auto text-xs bg-muted p-4 rounded">{`<EmailTemplate
-  firstName="${currentData.firstName}"
-  lastName="${currentData.lastName}"
-  companyName="${currentData.company}"
-  position="${currentData.jobTitle}"
-  body="${emailContent.body}"
+                  <pre className="overflow-x-auto text-xs bg-muted p-4 rounded">
+                    {/* very basic HTML preview list */}
+                    {useDB && isBulk
+                      ? recipients
+                          .filter((r) => selectedRecipients.includes(r.id))
+                          .map(
+                            (r) =>
+                              `<EmailTemplate
+  firstName="${r.firstName}"
+  lastName="${r.lastName}"
+  companyName="${r.company}"
+  position="${r.jobTitle}"
+  subject="${getPreviewSubject(r)}"
+  body="${getPreviewBody(r)}"
   signature="${emailContent.signature}"
-/>`}</pre>
+/>`
+                          )
+                          .join("\n\n")
+                      : !useDB && isBulk
+                      ? manualBulkData
+                          .map(
+                            (m) =>
+                              `<EmailTemplate
+  firstName="${m.firstName}"
+  lastName="${m.lastName}"
+  companyName="${m.company}"
+  position="${m.jobTitle}"
+  subject="${getPreviewSubject(m)}"
+  body="${getPreviewBody(m)}"
+  signature="${emailContent.signature}"
+/>`
+                          )
+                          .join("\n\n")
+                      : `<EmailTemplate
+  firstName="${(currentData as any)?.firstName}"
+  lastName="${(currentData as any)?.lastName}"
+  companyName="${(currentData as any)?.company}"
+  position="${(currentData as any)?.jobTitle}"
+  subject="${getPreviewSubject(currentData)}"
+  body="${getPreviewBody(currentData)}"
+  signature="${emailContent.signature}"
+/>`}
+                  </pre>
                 </TabsContent>
               </Tabs>
             </CardContent>
@@ -216,5 +525,5 @@ Your Company`,
         </div>
       </div>
     </div>
-  )
+  );
 }

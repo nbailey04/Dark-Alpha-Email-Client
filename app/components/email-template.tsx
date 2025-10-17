@@ -1,7 +1,7 @@
 interface EmailTemplateProps {
-  firstName: string
-  lastName: string
-  companyName: string
+  firstName?: string
+  lastName?: string
+  companyName?: string
   companyWebsite?: string
   position?: string
   subject?: string
@@ -10,9 +10,9 @@ interface EmailTemplateProps {
 }
 
 export function EmailTemplate({
-  firstName,
-  lastName,
-  companyName,
+  firstName = "First Name",
+  lastName = "Last Name",
+  companyName = "Company",
   companyWebsite,
   position,
   subject,
