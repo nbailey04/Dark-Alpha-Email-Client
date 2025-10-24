@@ -6,6 +6,21 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/f/[name]/template/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/f/[name]/template/page.js"
+    ],
+    "/f/[name]/new/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/f/[name]/new/page.js"
+    ],
+    "/api/users/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/users/route.js"
+    ],
     "/f/[name]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,20 +36,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/f/[name]/[id]/page.js"
     ],
-    "/f/[name]/new/page": [
+    "/f/templates/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/f/[name]/new/page.js"
+      "static/chunks/app/f/templates/page.js"
     ],
-    "/api/users/route": [
+    "/api/templates/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/api/users/route.js"
+      "static/chunks/app/api/templates/route.js"
     ],
-    "/f/[name]/template/page": [
+    "/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/f/[name]/template/page.js"
+      "static/chunks/app/search/page.js"
     ]
   }
 }

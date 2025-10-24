@@ -9,11 +9,16 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "8093ae2dbe977dcaa668acdfb08c7126ce7c6183fd": {
@@ -25,11 +30,16 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "c00313008472159af779d66d6bc1f2386e3144fc55": {
@@ -41,11 +51,16 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "c00e1b35d6140b891ce8a16df7799979ec21ba3b39": {
@@ -57,11 +72,16 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60": {
@@ -73,11 +93,16 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "e052b1cb2ee7da01f2e9b6bcdef34203555092b96d": {
@@ -89,59 +114,213 @@
         "app/f/[name]/[id]/page": {
           "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/search/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cqueries.ts%22%2C%5B%7B%22id%22%3A%2280260f395c8fcf27df09cb64fd33d391f937fe8777%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_4%22%7D%2C%7B%22id%22%3A%228093ae2dbe977dcaa668acdfb08c7126ce7c6183fd%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_0%22%7D%2C%7B%22id%22%3A%22c00313008472159af779d66d6bc1f2386e3144fc55%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_5%22%7D%2C%7B%22id%22%3A%22c00e1b35d6140b891ce8a16df7799979ec21ba3b39%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_3%22%7D%2C%7B%22id%22%3A%22c0bcdc4e2dbc24bdb9d71790101526e19ce9229f60%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_1%22%7D%2C%7B%22id%22%3A%22e052b1cb2ee7da01f2e9b6bcdef34203555092b96d%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_CACHE_2%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "rsc",
-        "app/f/[name]/[id]/page": "rsc"
+        "app/f/[name]/[id]/page": "rsc",
+        "app/search/page": "rsc"
       }
     },
     "6020aac268fde871dc82a00502929abe07b72e40af": {
       "workers": {
         "app/f/[name]/page": {
-          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
         "app/f/[name]/[id]/page": {
           "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "action-browser",
-        "app/f/[name]/[id]/page": "action-browser"
+        "app/f/[name]/[id]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
       }
     },
     "606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4": {
       "workers": {
         "app/f/[name]/page": {
-          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
         "app/f/[name]/[id]/page": {
           "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "action-browser",
-        "app/f/[name]/[id]/page": "action-browser"
+        "app/f/[name]/[id]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
       }
     },
     "60c0721f3293984434c022eca6350a6b39ad43b8c9": {
       "workers": {
         "app/f/[name]/page": {
-          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
         "app/f/[name]/[id]/page": {
           "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
         "app/f/[name]/page": "action-browser",
-        "app/f/[name]/[id]/page": "action-browser"
+        "app/f/[name]/[id]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
+      }
+    },
+    "006394b5fa135b4bd599d679f79db5ae1dffda02fc": {
+      "workers": {
+        "app/f/[name]/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/f/[name]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
+      }
+    },
+    "4050f48fa1ff939b60c132e2c3f6ae983025f09ea9": {
+      "workers": {
+        "app/f/[name]/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/f/[name]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
+      }
+    },
+    "408391cf07086d53e3cface14cf050bc666d3aea90": {
+      "workers": {
+        "app/f/[name]/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/f/[name]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
+      }
+    },
+    "40902989e1d8a0c5891dd1c3c5e6c99576a231b94e": {
+      "workers": {
+        "app/f/[name]/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/templates/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/template/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/f/[name]/new/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.3.0-canary.0_react-_3873ff6d9d5016665485e0a8f829f2b8/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CNateb%5C%5CDark%20Alpha%20Software%5C%5CDark-Alpha-Email-Client%5C%5Clib%5C%5Cdb%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%22006394b5fa135b4bd599d679f79db5ae1dffda02fc%22%2C%22exportedName%22%3A%22getTemplatesAction%22%7D%2C%7B%22id%22%3A%224050f48fa1ff939b60c132e2c3f6ae983025f09ea9%22%2C%22exportedName%22%3A%22saveTemplateAction%22%7D%2C%7B%22id%22%3A%22408391cf07086d53e3cface14cf050bc666d3aea90%22%2C%22exportedName%22%3A%22deleteTemplateAction%22%7D%2C%7B%22id%22%3A%2240902989e1d8a0c5891dd1c3c5e6c99576a231b94e%22%2C%22exportedName%22%3A%22getTemplateByIdAction%22%7D%2C%7B%22id%22%3A%226020aac268fde871dc82a00502929abe07b72e40af%22%2C%22exportedName%22%3A%22sendEmailAction%22%7D%2C%7B%22id%22%3A%22606750a0e8fa97d7cd9dda2b1625dca8e83c3347f4%22%2C%22exportedName%22%3A%22moveThreadToDone%22%7D%2C%7B%22id%22%3A%2260c0721f3293984434c022eca6350a6b39ad43b8c9%22%2C%22exportedName%22%3A%22moveThreadToTrash%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/f/[name]/page": "action-browser",
+        "app/f/templates/page": "action-browser",
+        "app/f/[name]/template/page": "action-browser",
+        "app/f/[name]/new/page": "action-browser"
       }
     }
   },
